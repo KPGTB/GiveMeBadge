@@ -11,14 +11,7 @@ just_fix_windows_console()
 if sys.version_info < (3, 8):
     exit("Python 3.8 or higher is required to run this bot!")
 
-# Now make sure that the discord.py library is installed or/and is up to date
-try:
-    from discord import app_commands, Intents, Client, Interaction
-except ImportError:
-    exit(
-        "Either discord.py is not installed or you are running an older and unsupported version of it."
-        "Please make sure to check that you have the latest version of discord.py! (try reinstalling the requirements?)"
-    )
+from discord import app_commands, Intents, Client, Interaction
 
 # ASCII logo, uses Colorama for coloring the logo.
 logo = f"""
