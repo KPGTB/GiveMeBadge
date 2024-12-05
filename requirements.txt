@@ -1,3 +1,4 @@
+audioop-lts
 discord.py==2.2.2
 requests
 colorama==0.4.6
